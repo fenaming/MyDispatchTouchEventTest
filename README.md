@@ -1,6 +1,17 @@
 # MyDispatchTouchEventTest
 this is a project to test dispatchtouchevent.
 
+事件传递机制主要包括三个阶段：分发、拦截、消费，其中拥有事件传递处理能力的有下面三种：
+
+Activity：dispatchTouchEvent()，onTouchEvent()；
+
+ViewGroup：dispatchTouchEvent()，onInterceptTouchEvent()，onTouchEvent()；
+
+View：dispatchTouchEvent()，onTouchEvent()；
+
+下图为没有人为干预情况下ACTION_DOWN事件传递：
+
+![image](https://yangukanyang.hulianjun.com/fenaming/20583109-423bc028e81cf0fb.png)
 
 # 结论
 
